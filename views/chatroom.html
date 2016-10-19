@@ -26,7 +26,7 @@ navigator.getUserMedia({video: true, audio: true}, function(stream) {
 
     var socket = io.connect();
 
-    var peer = new Peer({key: '4pt64ta9p1zto6r', debug: true,secure:true});
+    var peer = new Peer({key: '4pt64ta9p1zto6r', debug: true});
 
     peer.on('open', function(peer) {
     	peer_id = peer;
