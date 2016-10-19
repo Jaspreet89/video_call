@@ -26,7 +26,7 @@ navigator.getUserMedia({video: true, audio: true}, function(stream) {
 
     var socket = io.connect();
 
-    var peer = new Peer({key: '4pt64ta9p1zto6r', debug: true});
+    var peer =new Peer(Math.floor((Math.random() * 10000000) + 1), {host: 'localhost', port: 9000, path: '/myapp'});
 
     peer.on('open', function(peer) {
     	peer_id = peer;

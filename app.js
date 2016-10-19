@@ -1,4 +1,6 @@
 //dependencies
+var PeerServer = require('peer').PeerServer;
+var server = PeerServer({port: 9000, path: '/myapp'});
 var routes = require('./routes');
 var express = require('express');
 var path = require('path');
