@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Spyke</title>
+  <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="row-fluid">
+      <div class="hero-unit span6">
+   <h2>True peer-to-peer video chat</h2>
+   <h2>Because you want to chat without anyone listening in.</h2>
+   </div>
+   </div>
+              
+    <button id = "chatroom" onclick= "goToRandomVid();" type="submit">Make video chat room</button>
+    <script type="text/javascript"></script>
+ <script>
+function randomVidName() {
+    var chars = "0123456789ABCDEFGHIJKLMNOPQRS-_=TUVWXYZabcdefghijklmnopqrstuvwxyz";
+    var string_length = 20;
+    var randomstring = '';
+    for (var i = 0; i < string_length; i++) 
+    {
+        var rnum = Math.floor(Math.random() * chars.length);
+        randomstring += chars.substring(rnum, rnum + 1);
+    }
+    return randomstring;
+  }         
+   
+function goToRandomVid() {
+  window.location = "/chatroom/" + randomVidName();
+}
+
+ </script>
+ 
+ </body>
+</html>
+
+
+ 
+      
