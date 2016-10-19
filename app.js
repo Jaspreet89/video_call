@@ -46,13 +46,6 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
-app.get('/about', function(req, res){
-  res.render('about');
-});
-
-app.get('/documentation', function(req, res){
-  res.render('documentation');
-});
 
 //randomly generated url that gets the chatroom.html page
 //newid is everything after /chatroom/ in the url
