@@ -26,7 +26,7 @@ navigator.getUserMedia({video: true, audio: true}, function(stream) {
 
     var socket = io.connect();
 var generatedId=Math.floor((Math.random() * 10000000) + 1);
-    var peer =new Peer(generatedId, {host:'peer-server-meet.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3});
+    var peer =new Peer(generatedId, {host:'peer-server-meet.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3,timeout:1000*60*60});
 
     peer.on('open', function(peer) {
     	peer_id = peer;
