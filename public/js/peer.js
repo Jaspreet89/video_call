@@ -1550,6 +1550,7 @@
                 };
             },
             _print: function () {
+                setTimeout(function () {
                 var err = false;
                 var copy = Array.prototype.slice.call(arguments);
                 copy.unshift('PeerJS: ');
@@ -1559,7 +1560,7 @@
                         err = true;
                     }
                 }
-              setTimeout(function () {
+
                   err ? console.error.apply(console, copy) : console.log.apply(console, copy);
               },10);
             },
