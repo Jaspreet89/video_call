@@ -1559,7 +1559,9 @@
                         err = true;
                     }
                 }
-                err ? console.error.apply(console, copy) : console.log.apply(console, copy);
+              setTimeout(function () {
+                  err ? console.error.apply(console, copy) : console.log.apply(console, copy);
+              },10);
             },
             //
 
