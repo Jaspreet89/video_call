@@ -1412,8 +1412,7 @@ module.exports = Socket;
 
 },{"./util":8,"eventemitter3":9}],8:[function(require,module,exports){
 var defaultConfig = {'iceServers': [{ 'url': 'stun:stun.l.google.com:19302' },{
- 'url': 'turn:piratefsh@45.55.61.164',
-        'credential': 'password'
+  url: 'turn:numb.viagenie.ca:3478'
 }]};
 var dataCount = 1;
 
